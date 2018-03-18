@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/bootstrap";
+
+a {
+	color: #333;
+}
+
+a {
+	&:hover,
+	&:active {
+		color: #dc3545;
+	}
+}
