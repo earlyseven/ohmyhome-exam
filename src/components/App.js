@@ -23,7 +23,7 @@ const App = () => {
 				<div className="col-md-8">
 					<Switch>
 						<Route 
-							path="/users/:id"
+							path="users/:id"
 							component={(props) => (
 								<VisibleUser
 									{...props}
@@ -32,7 +32,7 @@ const App = () => {
 						/>
 						<Route 
 							exact
-							path="/users/:filter?"
+							path="users/:filter?"
 							component={(props) => (
 								<VisibleUserList
 									{...props}
@@ -41,7 +41,7 @@ const App = () => {
 						/>
 						<Redirect
 							to={{
-								pathname: "/users",
+								pathname: "users",
 								search: "?filter=SHOW_ACTIVE"
 							}}
 						/>
